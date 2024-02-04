@@ -6,6 +6,8 @@ This is a repo for the dotfiles that I use for various configurations in my syst
 
 1. Git
 2. Stow
+3. fzf
+4. zsh-syntax-highlighting
 
 # Usage
 
