@@ -8,6 +8,7 @@ This is a repo for the dotfiles that I use for various configurations in my syst
 2. Stow
 3. fzf
 4. zsh-syntax-highlighting
+5. A nerd font (I use JetBrainsMono)
 
 # Usage
 
