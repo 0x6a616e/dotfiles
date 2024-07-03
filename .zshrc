@@ -7,8 +7,8 @@ NEWLINE=$'\n'
 
 PS1='%B%T%b %F{cyan}%0~%f$NEWLINE%F{cyan}~>%f '
 
-bindkey '^P' up-line-or-history
-bindkey '^N' down-line-or-history
+bindkey '^P' history-search-backward
+bindkey '^N' history-search-forward
 
 autoload -U compinit
 compinit
