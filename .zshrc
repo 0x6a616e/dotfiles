@@ -13,9 +13,17 @@ bindkey '^N' down-line-or-history
 autoload -U compinit
 compinit
 
-HISTSIZE=200
+HISTSIZE=5000
 HISTFILE=~/.zsh_history
-SAVEHIST=200
+SAVEHIST=$HISTSIZE
+HISTDUP=erase
+setopt appendhistory
+setopt sharehistory
+setopt hist_ignore_space
+setopt hist_ignore_all_dups
+setopt hist_save_no_dups
+setopt hist_ignore_dups
+setopt hist_find_no_dups
 
 source ~/.config/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 bindkey '^Y' autosuggest-accept
