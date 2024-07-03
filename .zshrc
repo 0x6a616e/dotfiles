@@ -40,6 +40,10 @@ export FZF_DEFAULT_OPTS=" \
 
 export XDG_CONFIG_HOME=~/.config
 
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+eval $(dircolors -b)
+zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
+
 if [[ -z $TMUX ]]; then
     tmux new -As jan 
 fi
