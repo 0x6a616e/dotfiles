@@ -11,6 +11,7 @@ This is a repo for the dotfiles that I use for various configurations in my syst
 5. A nerd font (I use JetBrainsMono)
 6. (tmux plugin manager)[https://github.com/tmux-plugins/tpm.git]
 7. (zsh-completions)[https://github.com/zsh-users/zsh-completions.git]
+8. Alacritty
 
 # Usage
 
