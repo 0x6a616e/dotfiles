@@ -7,10 +7,10 @@ This is a repo for the dotfiles that I use for various configurations in my syst
 1. Git
 2. Stow
 3. fzf
-4. (zsh-syntax-highlighting)[https://github.com/zsh-users/zsh-syntax-highlighting.git]
+4. [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting.git)
 5. A nerd font (I use JetBrainsMono)
-6. (tmux plugin manager)[https://github.com/tmux-plugins/tpm.git]
-7. (zsh-completions)[https://github.com/zsh-users/zsh-completions.git]
+6. [tmux plugin manager](https://github.com/tmux-plugins/tpm.git)
+7. [zsh-completions](https://github.com/zsh-users/zsh-completions.git)
 8. Alacritty
 
 # Usage
