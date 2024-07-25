@@ -12,6 +12,7 @@ This is a repo for the dotfiles that I use for various configurations in my syst
 6. [tmux plugin manager](https://github.com/tmux-plugins/tpm.git)
 7. [zsh-completions](https://github.com/zsh-users/zsh-completions.git)
 8. Alacritty
+9. Kanata
 
 # Usage
 
@@ -33,7 +34,9 @@ cd dotfiles
 stow .
 ```
 
-4. Profit
+4. Configure Kanata service
+
+5. Profit
 
 ---
 
