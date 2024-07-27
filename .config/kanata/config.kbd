@@ -1,10 +1,10 @@
 (defsrc
   caps
-  lctrl
+  rshift
 )
 
 (defalias
-  escctrl (tap-hold 200 200 esc lctrl)
+  escctrl esc
   newcaps caps
 )
 
