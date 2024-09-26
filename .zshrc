@@ -13,8 +13,8 @@ NEWLINE=$'\n'
 PS1='%B%T%b %F{cyan}%0~%f$NEWLINE%F{cyan}~>%f '  # Timestamp, current directory in cyan
 
 # History search key bindings
-bindkey '^P' history-search-backward  # Ctrl+P to search backward in history
-bindkey '^N' history-search-forward   # Ctrl+N to search forward in history
+bindkey '^K' history-search-backward  # Ctrl+P to search backward in history
+bindkey '^J' history-search-forward   # Ctrl+N to search forward in history
 
 # Initialize zsh completion system
 autoload -U compinit
@@ -63,7 +63,10 @@ zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 # Initialize fzf for zsh
 eval "$(fzf --zsh)"
 
+eval "$(zoxide init zsh --cmd cd)"
+
 # Start tmux session if not already inside a tmux session
-if [[ -z $TMUX ]]; then
-    tmux new -As jan  # Start new tmux session named 'jan'
-fi
+# if [[ -z $TMUX ]]; then
+#     tmux new -As jan  # Start new tmux session named 'jan'
+# fi
+export PATH=$PATH:$HOME/go/bin
