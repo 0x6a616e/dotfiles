@@ -1,6 +1,6 @@
 (defsrc
   caps
-  rshift
+  esc
 )
 
 (defalias

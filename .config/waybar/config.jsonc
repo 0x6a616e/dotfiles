@@ -1,0 +1,43 @@
+{
+    "layer": "top", // Waybar at top layer
+    "position": "bottom", // Waybar position (top|bottom|left|right)
+    // "width": 1280, // Waybar width
+    // Choose the order of the modules
+    "modules-left": ["hyprland/workspaces"],
+    "modules-center": [],
+    "modules-right": ["network", "clock", "battery", "custom/lock", "custom/power"],
+    "hyprland/workspaces": {
+        "format": " {icon} ",
+        "format-icons": {
+            "default": "",
+        },
+    },
+    "network": {
+        "tooltip": false,
+        "format": "󰤨 {essid}",
+        "on-click": "wifimenu",
+    },
+    "clock": {
+        "timezone": "America/Monterrey",
+        "format": "󰥔 {:%H:%M   %d/%m/%Y}",
+        "tooltip": false,
+    },
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-icons": ["", "", "", "", ""],
+    },
+    "custom/lock": {
+        "tooltip": false,
+        "on-click": "sh -c 'hyprlock'",
+        "format": "",
+    },
+    "custom/power": {
+        "tooltip": false,
+        "on-click": "powermenu",
+        "format": ""
+    }
+}
