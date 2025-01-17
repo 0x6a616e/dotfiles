@@ -70,3 +70,5 @@ eval "$(zoxide init zsh --cmd cd)"
 #     tmux new -As jan  # Start new tmux session named 'jan'
 # fi
 export PATH=$PATH:$HOME/go/bin
+
+eval "$(starship init zsh)"
