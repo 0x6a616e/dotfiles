@@ -4,7 +4,7 @@
 )
 
 (defsrc
-  caps a s d f j k l ;
+  esc caps a s d f j k l ;
 )
 
 (defvar
@@ -13,7 +13,8 @@
 )
 
 (defalias
-  escctrl (multi f24 (tap-hold $tap-time $hold-time esc caps))
+  esccaps caps
+  newesc esc
   a (multi f24 (tap-hold $tap-time $hold-time a lmet))
   s (multi f24 (tap-hold $tap-time $hold-time s lalt))
   d (multi f24 (tap-hold $tap-time $hold-time d lsft))
@@ -25,5 +26,5 @@
 )
 
 (deflayer base
-  @escctrl @a @s @d @f @j @k @l @;
+  @esccaps @newesc @a @s @d @f @j @k @l @;
 )
