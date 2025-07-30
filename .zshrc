@@ -71,4 +71,7 @@ eval "$(zoxide init zsh --cmd cd)"
 # fi
 export PATH=$PATH:$HOME/go/bin
 
-eval "$(starship init zsh)"
+# eval "$(starship init zsh)"
+
+# Created by `pipx` on 2025-03-11 02:05:36
+export PATH="$PATH:/home/jan/.local/bin"
